@@ -1,0 +1,52 @@
+html,
+body,
+div#plane {
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+div#plane {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: -500px;
+  animation-name: flying;
+  animation-duration: 5s;
+}
+
+h1 {
+  width: 200px;
+  font-size: 60px;
+  position: relative;
+  text-align: center;
+  left: calc(50% - 100px);
+  animation-name: textanimation;
+  animation-duration: 10s;
+}
+
+@keyframes textanimation {
+  0% {
+    left: -500px;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: calc(50% - 100px);
+  }
+}
+
+@keyframes flying {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: 100%;
+  }
+}
